@@ -74,7 +74,6 @@ class App extends Component {
         })}
       </div>
     );
-    const inputValue = this.state.newThing.thingToDo;
     return (
       <div className="App">
         <p className="Title">To Do List</p>
@@ -82,7 +81,7 @@ class App extends Component {
         <input
           type="text"
           className="InputBox"
-          value={inputValue}
+          value={this.state.newThing.thingToDo}
           onChange={this.change}
         />
         <button className="Add" onClick={this.addHandler}>
